@@ -1,3 +1,7 @@
+Monte Carlo Simulations for simulation coarse-grained DNA braiding templates.
+
+Recommended software and packages: MATLAB2024b, Statistics and Machine Learning Toolbox, and Parallel Computing Toolbox 
+
 % running_general_braiding_simulation.m
 This file sets up and runs any general braiding simulation. It specifies WLC parameters, geometrical constraints, mechanical quantities, and MC parameters. 
 
