@@ -52,7 +52,7 @@ ko = kT * 200;    % to align the chain to +z
 kd = kT * 20;     % to fix the distance between 2 top anchoring points
 
 % start MC simulations
-for si = 5
+for si = 5 % convert to parfor for parallel simulations of different catenation densities
    ttconfig1 = config1(:,:,si);
    ttconfig2 = config2(:,:,si);
    [vj1, vj2] = braiding_simu_gen(n0, f, Lp, two_et, two_eb, dlkarr(si), d0, nc, trials, kmax, ftrial, ttconfig1, ttconfig2, seg, 225, kt, ko,kd,repeat)
